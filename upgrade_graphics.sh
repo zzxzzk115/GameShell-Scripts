@@ -8,10 +8,11 @@ wget https://github.com/zzxzzk115/GameShell-Scripts/releases/download/v0.1.0/pre
 unzip prebuild.zip
 
 # Install libdrm
-cd ~/tmp/prebuild/
-sudo chmod +x ./libdrm/install.sh
-./libdrm/install.sh
+cd ~/tmp/prebuild/libdrm
+sudo chmod +x install.sh
+./install.sh
 
 # Install mesa
-cd ~/tmp/prebuild/
-sudo chmod +x ./mesa/install.sh
+cd ~/tmp/prebuild/mesa
+sudo chmod +x install.sh
+./install.sh
