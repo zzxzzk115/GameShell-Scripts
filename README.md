@@ -3,18 +3,18 @@ Upgrade the functionalities of your GameShell.
 
 ## Quick Usage
 
-If you are in China, please run this command on GameShell first:
-
-```bash
-sudo sh -c "sed -i \"/# GitHub520 Host Start/Q\" /etc/hosts && curl https://raw.hellogithub.com/hosts >> /etc/hosts"
-```
-
 If your kernel version > 5.3.6 then you need to switch to kernel 5.3.6. This is the most stable one.
 
 Upgrade graphics:
 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/zzxzzk115/GameShell-Scripts/main/upgrade_graphics.sh)
+```
+
+如果你在中国大陆，请使用以下脚本：
+
+```bash
+bash <(curl -s https://raw.fastgit.org/zzxzzk115/GameShell-Scripts/main/upgrade_graphics_cn.sh)
 ```
 
 ## License
