@@ -13,7 +13,6 @@ sudo chmod +x install.sh
 ./install.sh
 
 # Install mesa
-sudo mv /usr/lib/lima /usr/lib/lima.old/
 cd ~/tmp/prebuild/mesa
 sudo chmod +x install.sh
 ./install.sh
