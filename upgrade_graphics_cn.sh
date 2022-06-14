@@ -13,6 +13,7 @@ sudo chmod +x install.sh
 ./install.sh
 
 # Install mesa
+sudo mv /usr/lib/lima /usr/lib/lima.old/
 cd ~/tmp/prebuild/mesa
 sudo chmod +x install.sh
 ./install.sh
@@ -20,4 +21,3 @@ sudo chmod +x install.sh
 # Post Fix
 sudo mv /usr/lib/dri/sun4i_drm_dri.so /usr/lib/dri/sun4i_drm_dri.so.old
 sudo mv /usr/lib/dri/sun4i-drm_dri.so /usr/lib/dri/sun4i_drm_dri.so
-sudo mv /usr/lib/lima /usr/lib/lima.old/
