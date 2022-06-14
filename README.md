@@ -17,7 +17,7 @@ bash <(curl -s https://raw.githubusercontent.com/zzxzzk115/GameShell-Scripts/mai
 bash <(curl -s https://raw.fastgit.org/zzxzzk115/GameShell-Scripts/main/upgrade_graphics_cn.sh)
 ```
 
-然后需要重启，才能生效：
+Then you need to reboot your GameShell：
 
 ```bash
 sudo reboot
