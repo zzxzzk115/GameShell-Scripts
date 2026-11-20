@@ -27,11 +27,21 @@ sudo reboot
 
 **Change apt source:**
 
-目前支持中国大陆用户，一键更换apt源为清华源：
+GameShell 的系统是 Debian buster，Debian 已经把它移进归档，大多数镜像（包括清华、中科大）都不再提供，所以原来的源和清华源都用不了了。这个脚本会在仍然保留 buster 归档的镜像（阿里云、华为云、Debian 官方 archive.debian.org）里测速，换成最快的那个，然后 `apt-get update` 和 `upgrade`。原来的 `sources.list` 会备份为 `sources.list.bak`。
+
+GameShell's OS is Debian buster, which Debian has archived; most mirrors no longer carry it. This picks the fastest mirror that still does and switches apt to it.
 
 ```bash
-bash <(curl -sL https://cdn.jsdelivr.net/gh/zzxzzk115/GameShell-Scripts@main/scripts/apt_source/tsinghua.sh)
+bash <(curl -sL https://raw.githubusercontent.com/zzxzzk115/GameShell-Scripts/main/scripts/apt_source/debian_archive.sh)
 ```
+
+在中国大陆可以改用 jsDelivr 获取脚本：
+
+```bash
+bash <(curl -sL https://cdn.jsdelivr.net/gh/zzxzzk115/GameShell-Scripts@main/scripts/apt_source/debian_archive.sh)
+```
+
+想自己指定镜像，可以设置 `APT_MIRROR`，例如 `APT_MIRROR=mirrors.aliyun.com/debian-archive`。旧的 `tsinghua.sh` 链接仍然可用，会转去运行这个脚本。
 
 ## License
 
