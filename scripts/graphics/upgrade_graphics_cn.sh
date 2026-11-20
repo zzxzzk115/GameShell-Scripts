@@ -1,22 +1,4 @@
 #!/bin/bash
-
-# Download prebuild files
-cd ~
-mkdir -p tmp
-cd tmp
-wget https://raw.fastgit.org/zzxzzk115/GameShell-Scripts/main/data/prebuild.zip
-unzip prebuild.zip
-
-# Install libdrm
-cd ~/tmp/prebuild/libdrm
-sudo chmod +x install.sh
-./install.sh
-
-# Install mesa
-cd ~/tmp/prebuild/mesa
-sudo chmod +x install.sh
-./install.sh
-
-# Post Fix
-sudo mv /usr/lib/dri/sun4i_drm_dri.so /usr/lib/dri/sun4i_drm_dri.so.old
-sudo mv /usr/lib/dri/sun4i-drm_dri.so /usr/lib/dri/sun4i_drm_dri.so
+# Kept for old links. upgrade_graphics.sh now picks the fastest route to GitHub by itself, so this just runs it
+# (fetched through jsDelivr, which is usually reachable where GitHub is not).
+bash <(curl -sL https://cdn.jsdelivr.net/gh/zzxzzk115/GameShell-Scripts@main/scripts/graphics/upgrade_graphics.sh)
